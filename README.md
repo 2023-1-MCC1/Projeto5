@@ -4,13 +4,13 @@
 <a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Nome do Projeto
+# Gato Trabalhador
 
-## Nome do Grupo
+## Nome do Grupo: Jamal
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Vitor Hideki Tokunaga</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Vitor Leão Bonifácio</a>, <a href="https://www.linkedin.com/in/victorbarq/">Matheus Moura de Souza</a>, <a href="https://www.linkedin.com/in/victorbarq/">Jasmani Rudy</a>,
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href="https://www.linkedin.com/in/victorbarq/">Renata Muniz Do Nascimento</a>, <a href="https://www.linkedin.com/in/victorbarq/">Fabiano Alves Onça</a>, <a href="https://www.linkedin.com/in/victorbarq/">Eduardo Savino Gomes</a>, <a href="https://www.linkedin.com/in/victorbarq/">Jefferson de Oliveira Silva</a>
 
 ## Descrição
 
@@ -20,11 +20,11 @@
 </p>
 
 
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+Jogo feito para o projeto interdisciplinar do primeiro semestre do Curso de Ciência da Computação.
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
+Dentro do tema de Objetivos de Desenvolvimento Sustentáveis decididos pela ONU, temos um jogo que engloba o oitavo tópico: Trabalho decente e crescimento econômico.
 <br><br>
-May the force be with you!
+Gato Trabalhador é um jogo estilo clicker, baseado em jogos como Tap Titans e Cookie Clicker. Nele temos um gato que trabalha toda vez que a tela é tocada, mas também seu estresse aumenta. Caso o estresse aumente muito, o gato sofre consequências.
 <br><br>
 
 ## 🛠 Estrutura de pastas
