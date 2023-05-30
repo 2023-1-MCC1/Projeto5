@@ -8,11 +8,11 @@ public partial class status : Control
 	public player gato;
 	public background tela;
 	public RichTextLabel  menuEstresse, menuSono, menuDinheiro, menuNumeroDaFase,menuSaude;	
-	public inimigo enemy;
+	public inimigo inimigo;
 
 	public void atualizarMenu()
 	{
-		enemy = this.GetParent().GetNode<inimigo>("Inimigo");		
+		inimigo = this.GetParent().GetNode<inimigo>("Inimigo");		
 		tela = this.GetParent<background>();
 		RichTextLabel menuNumeroDaFase = this.GetNode<RichTextLabel>("FaseEInimigo/NumeroDaFase");
 		RichTextLabel menuSaude = this.GetNode<RichTextLabel>("VidaGato/vidaGato");
@@ -24,10 +24,10 @@ public partial class status : Control
 		sono = gato.sono;
 		dinheiro = gato.dinheiro;
 
-		enemy.barraDeVidaInimigoTexto.Text = "[center]" + Math.Round(enemy.vida,2) + "/ " + Math.Round(enemy.vidaMaxima,2) + "[/center]";		
-		enemy.barraDeVidaInimigo.Value = enemy.vida;
+		inimigo.barraDeVidaInimigoTexto.Text = "[center]" + Math.Round(inimigo.vida,2) + "/ " + Math.Round(inimigo.vidaMaxima,2) + "[/center]";		
+		inimigo.barraDeVidaInimigo.Value = inimigo.vida;
 		this.GetNode<TextureProgressBar>("VidaGato").Value = vida;
-		menuNumeroDaFase.Text = "[center]" + enemy.fase + "-" + (enemy.idInimigo + 1) + "[/center]";
+		menuNumeroDaFase.Text = "[center]" + inimigo.fase + "-" + (inimigo.idInimigo + 1) + "[/center]";
 		menuSaude.Text = "[center]" + vida + "/100 [/center]";
 		menuEstresse.Text =  estresse.ToString();
 		menuSono.Text = sono.ToString();

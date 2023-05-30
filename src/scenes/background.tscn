@@ -2,15 +2,19 @@
 
 [ext_resource type="Script" path="res://scripts/background.cs" id="1_jnm2r"]
 [ext_resource type="PackedScene" uid="uid://dgc16g128amv4" path="res://scenes/player.tscn" id="1_uvtiv"]
-[ext_resource type="Texture2D" uid="uid://4iwrasdm6wu8" path="res://sprites/janela.png" id="2_plrtf"]
+[ext_resource type="PackedScene" uid="uid://cr7oi4hvmkede" path="res://cenário/cenário.tscn" id="2_4eusi"]
 [ext_resource type="PackedScene" uid="uid://b8y22mqdqfuip" path="res://scenes/status.tscn" id="3_i7ew1"]
 [ext_resource type="PackedScene" uid="uid://ca0tccrk5ha6g" path="res://scenes/timer.tscn" id="5_5hbbe"]
 [ext_resource type="PackedScene" uid="uid://dpsmyhcurtuq5" path="res://scenes/inimigo.tscn" id="6_0a2m3"]
-[ext_resource type="PackedScene" uid="uid://dm0iefbb2bma2" path="res://scenes/menu_power_ups.tscn" id="6_fjcqk"]
+[ext_resource type="PackedScene" uid="uid://dka3vaql44ns8" path="res://scenes/menu_power_ups.tscn" id="6_fjcqk"]
 [ext_resource type="PackedScene" uid="uid://dye8cfkhpro5i" path="res://scenes/backgroundstart.tscn" id="8_0kcnj"]
 
 [node name="Background" type="Node2D"]
 script = ExtResource("1_jnm2r")
+
+[node name="Chão" parent="." instance=ExtResource("2_4eusi")]
+position = Vector2(217, 350)
+scale = Vector2(5.47945, 4.32)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("8_0kcnj")]
 
@@ -29,11 +33,6 @@ offset_bottom = 405.0
 scale = Vector2(0.919, 0.919)
 color = Color(0.356863, 0.360784, 0.313726, 0)
 metadata/_edit_use_anchors_ = true
-
-[node name="Janela" type="Sprite2D" parent="ColorRect"]
-position = Vector2(106, 228)
-scale = Vector2(1.919, 1.919)
-texture = ExtResource("2_plrtf")
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect"]
 layout_mode = 0
@@ -74,7 +73,7 @@ metadata/_edit_use_anchors_ = true
 position = Vector2(349, 58)
 
 [node name="Inimigo" parent="." instance=ExtResource("6_0a2m3")]
-position = Vector2(288, 179)
+position = Vector2(319, 221)
 scale = Vector2(1.265, 1.265)
 
 [connection signal="mouse_entered" from="ColorRect/areaDeClick" to="." method="_on_area_de_click_mouse_entered"]

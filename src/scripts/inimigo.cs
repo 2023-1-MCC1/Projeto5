@@ -4,8 +4,7 @@ using System;
 public partial class inimigo : Node2D
 {
 	public double  vida, recompensa, recompensaInicial,  vidaMaxima, vidaInicial;
-	public int idInimigo,lvlInimigo,fase;	
-	public RichTextLabel menuVidaInimigo;
+	public int idInimigo,lvlInimigo,fase;		
 	public background tela;
 	public status menu;
 	public player gato;
@@ -26,6 +25,10 @@ public partial class inimigo : Node2D
 
 			fase++;
 		}
+		else
+		{
+			this.lvlInimigo++;
+		}
 
 		if(idInimigo + 1 >= sprites.Count)
 		{
@@ -35,13 +38,12 @@ public partial class inimigo : Node2D
 		{
 			this.idInimigo++;
 		}
-
-		this.lvlInimigo++;
-		this.vidaMaxima = vidaInicial + (fase* (ordemDeLvl[lvlInimigo] * 0.2) * vidaInicial);
+		
+		this.vidaMaxima = vidaInicial + ((( fase * 3) + 1) + ordemDeLvl[lvlInimigo] * 0.2 * vidaInicial);
 		this.vida = this.vidaMaxima;
-		this.recompensa = Math.Round(fase * (this.recompensaInicial + (ordemDeLvl[lvlInimigo] * 0.2) * this.recompensaInicial ));
+		this.recompensa = Math.Round(fase * (this.recompensaInicial + (ordemDeLvl[lvlInimigo] * 0.2 * this.recompensaInicial) ));
 		barraDeVidaInimigo.MaxValue = Math.Round(this.vidaMaxima);
-		barraDeVidaInimigo.Value = Math.Round(this.vidaMaxima);
+		barraDeVidaInimigo.Value = Math.Round(this.vidaMaxima);		
 
 		this.spriteInimigo.Texture = GD.Load<Texture2D>(sprites[idInimigo]);
 		
@@ -59,15 +61,19 @@ public partial class inimigo : Node2D
 			"res://sprites/planilha excel.png",
 			"res://sprites/monitor.png",
 			"res://sprites/livro.png",
-			"res://sprites/miniboss2.png"
+			"res://sprites/miniboss2.png",
+			"res://sprites/prancheta2.png",
+			"res://sprites/planilha excel.png",
+			"res://sprites/monitor.png",
+			"res://sprites/livro.png",
+			"res://sprites/boss.png"
 
 		};
 
 		// ordemDeLvl = new Godot.Collections.Array<string>(1);
 
 		spriteInimigo = this.GetNode<Sprite2D>("Sprite2D");
-		menu = GetParent().GetNode<status>("Status");
-		menuVidaInimigo = menu.GetNode<RichTextLabel>("boxVidaInimigo/vidaInimigo");
+		menu = GetParent().GetNode<status>("Status");		
 		gato = GetParent().GetNode<player>("player");
 		tela = GetParent<background>();	
 		barraDeVidaInimigo = this.GetNode<TextureProgressBar>("TextureProgressBar");
@@ -83,7 +89,7 @@ public partial class inimigo : Node2D
 		vida = vidaMaxima;
 		spriteInimigo.Texture = GD.Load<Texture2D>(sprites[idInimigo]);		
 		barraDeVidaInimigo.MaxValue = this.vidaMaxima;
-
+		
 		menu.atualizarMenu();
 		
 	}

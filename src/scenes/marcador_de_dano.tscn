@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjal34o2mrda4"]
+
+[ext_resource type="Script" path="res://scripts/marcadorDeDano.cs" id="1_sihj8"]
+
+[node name="marcadorDeDano" type="Label"]
+offset_right = 79.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "-10"
+script = ExtResource("1_sihj8")

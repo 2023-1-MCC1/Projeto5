@@ -156,6 +156,7 @@ public partial class menu_power_ups : Control
 			gato.estresse = gato.estresse - 10;
 			for(int contagem = 0;contagem < 6;contagem++)
 			{
+				gato.sono = gato.sono + 1;
 				timer.contarHoras();
 			}
 			menu.atualizarMenu();

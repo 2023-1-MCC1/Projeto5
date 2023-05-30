@@ -11,7 +11,7 @@ public partial class background : Node2D
 	public NodePath caminho;
 	public bool mouseDentro;
 	public player gato;
-	public inimigo antiHeroi;
+	public inimigo inimigo;
 	public Vector2 posicaoSpawnInimigo = new Vector2(220,135);
 	public double vidaMaximaInimigo = 100;		
 	public override void _Ready()
@@ -20,7 +20,7 @@ public partial class background : Node2D
 		gato = this.GetNode<player>("player");
 		menu = this.GetNode<status>("Status");
 		powerUpsMenu = this.GetNode<menu_power_ups>("menuPowerUps");
-		antiHeroi = this.GetNode<inimigo>("Inimigo");
+		inimigo = this.GetNode<inimigo>("Inimigo");
 		
 		
 		menu.atualizarMenu();
@@ -29,10 +29,8 @@ public partial class background : Node2D
 	public override void _Process(double delta)
 	{
 		if (Input.IsActionJustPressed("clique_esquerdo") && mouseDentro)
-		{		
-			antiHeroi = this.GetChild<inimigo>(-1);
-
-			gato.trabalhar(antiHeroi);
+		{	
+			gato.trabalhar(inimigo);
 			menu.atualizarMenu();
 		}
 	}
