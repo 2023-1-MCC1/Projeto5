@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://mhsylq8tn7o1"]
+
+[ext_resource type="PackedScene" uid="uid://dye8cfkhpro5i" path="res://scenes/backgroundstart.tscn" id="1_cyxsb"]
+[ext_resource type="Script" path="res://scripts/start.cs" id="1_i2eyw"]
+[ext_resource type="Texture2D" uid="uid://bqdqjp7vjxja7" path="res://sprites/Sprites Noite/1lua.png" id="2_2iuvj"]
+[ext_resource type="Texture2D" uid="uid://ds2kv16oaaf7h" path="res://sprites/botão start.png" id="2_88orc"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_i2eyw")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_cyxsb")]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -6.0
+offset_top = 60.0
+offset_right = 456.0
+offset_bottom = 368.0
+theme_override_font_sizes/bold_font_size = 38
+bbcode_enabled = true
+text = "[center][b]Life's Jorje[/b][center]"
+
+[node name="1Lua" type="Sprite2D" parent="."]
+position = Vector2(264, 20)
+scale = Vector2(2.31818, 2.06579)
+texture = ExtResource("2_2iuvj")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 126.0
+offset_top = 142.0
+offset_right = 321.0
+offset_bottom = 189.0
+
+[node name="Sprite2D" type="Sprite2D" parent="TextureButton"]
+position = Vector2(97, 22)
+scale = Vector2(2.69792, 2.30859)
+texture = ExtResource("2_88orc")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

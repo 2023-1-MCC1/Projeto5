@@ -1,0 +1,140 @@
+[gd_scene load_steps=10 format=3 uid="uid://b8y22mqdqfuip"]
+
+[ext_resource type="Script" path="res://scripts/status.cs" id="1_p66xt"]
+[ext_resource type="Texture2D" uid="uid://clbujmen7xmqq" path="res://sprites/button64X14.png" id="1_yamdi"]
+[ext_resource type="Texture2D" uid="uid://d3r3057fg225g" path="res://sprites/bonecos gerais e ícones.png" id="3_ciyy5"]
+[ext_resource type="Texture2D" uid="uid://d2570c61y2tqy" path="res://sprites/lifebar_bg.png" id="3_tvlof"]
+[ext_resource type="Texture2D" uid="uid://dui1q4lrgklmx" path="res://sprites/lifebar_fill.png" id="4_ciq77"]
+[ext_resource type="Texture2D" uid="uid://ykq7pi6gv671" path="res://sprites/dinheiro.png" id="5_8t63r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwjg7"]
+atlas = ExtResource("3_ciyy5")
+region = Rect2(73, 77, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a276i"]
+atlas = ExtResource("3_ciyy5")
+region = Rect2(1, 108, 24, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3au0s"]
+atlas = ExtResource("3_ciyy5")
+region = Rect2(39, 107, 13, 14)
+
+[node name="Status" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p66xt")
+
+[node name="boxEstresse" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 50.0
+offset_right = 108.0
+offset_bottom = 75.0
+texture = ExtResource("1_yamdi")
+metadata/_edit_group_ = true
+
+[node name="BonecosGeraisEÍcones" type="Sprite2D" parent="boxEstresse"]
+position = Vector2(16, 13)
+scale = Vector2(2.375, 2.125)
+texture = SubResource("AtlasTexture_lwjg7")
+
+[node name="Estresse" type="RichTextLabel" parent="boxEstresse"]
+layout_mode = 0
+offset_left = 33.0
+offset_right = 108.0
+offset_bottom = 25.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Estresse"
+
+[node name="boxSono" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 77.0
+offset_right = 108.0
+offset_bottom = 102.0
+texture = ExtResource("1_yamdi")
+metadata/_edit_group_ = true
+
+[node name="BonecosGeraisEÍcones" type="Sprite2D" parent="boxSono"]
+position = Vector2(17, 13)
+texture = SubResource("AtlasTexture_a276i")
+
+[node name="Sono" type="RichTextLabel" parent="boxSono"]
+layout_mode = 0
+offset_left = 33.0
+offset_right = 149.0
+offset_bottom = 25.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Sono"
+
+[node name="boxDinheiro" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 325.0
+offset_top = 24.0
+offset_right = 416.0
+offset_bottom = 49.0
+texture = ExtResource("1_yamdi")
+metadata/_edit_group_ = true
+
+[node name="Dinheiro2" type="Sprite2D" parent="boxDinheiro"]
+position = Vector2(12, 12)
+scale = Vector2(0.241, 0.241)
+texture = ExtResource("5_8t63r")
+
+[node name="Dinheiro" type="RichTextLabel" parent="boxDinheiro"]
+layout_mode = 0
+offset_left = 20.0
+offset_right = 92.0
+offset_bottom = 25.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Dinheiro"
+
+[node name="FaseEInimigo" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 160.0
+offset_top = 50.0
+offset_right = 296.0
+offset_bottom = 75.0
+texture = ExtResource("1_yamdi")
+metadata/_edit_group_ = true
+
+[node name="NumeroDaFase" type="RichTextLabel" parent="FaseEInimigo"]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 135.0
+offset_bottom = 25.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "[center]Fase"
+
+[node name="VidaGato" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 22.0
+offset_right = 428.0
+offset_bottom = 75.0
+scale = Vector2(0.392, 0.392)
+texture_under = ExtResource("3_tvlof")
+texture_progress = ExtResource("4_ciq77")
+
+[node name="BonecosGeraisEÍcones" type="Sprite2D" parent="VidaGato"]
+position = Vector2(7.65306, 28.0612)
+scale = Vector2(4.12088, 3.59876)
+texture = SubResource("AtlasTexture_3au0s")
+
+[node name="vidaGato" type="RichTextLabel" parent="VidaGato"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 388.0
+offset_bottom = 43.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "[center] Vida"

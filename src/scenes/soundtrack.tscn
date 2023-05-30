@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://casoaw11j7vrq"]
+
+[ext_resource type="AudioStream" uid="uid://cuy7hswk22bs7" path="res://Run the brave .wav" id="1_otv6k"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_otv6k")
+volume_db = -15.028
+autoplay = true
