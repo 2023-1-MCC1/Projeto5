@@ -3,9 +3,10 @@ using System;
 
 public partial class start : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
+	private AnimationPlayer animatedtransition;
 	public override void _Ready()
 	{
+		animatedtransition = GetNode<AnimationPlayer>("AnimationPlayer");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -14,6 +15,11 @@ public partial class start : Node2D
 	}
 	private void _on_texture_button_pressed()
 	{
-	GetTree().ChangeSceneToFile("res://scenes/background.tscn");
+	animatedtransition.Play("reveal");
+	}
+
+	private void _on_animation_player_animation_finished(AnimationPlayer reveal)
+	{
+		GetTree().ChangeSceneToFile("res://scenes/background.tscn");
 	}
 }

@@ -1,8 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://bt3fuhtd5ats1"]
+[gd_scene load_steps=24 format=3 uid="uid://bt3fuhtd5ats1"]
 
 [ext_resource type="Script" path="res://scripts/gameover.cs" id="1_p3kr8"]
 [ext_resource type="Texture2D" uid="uid://qlkh84f4jtg1" path="res://sprites/Game-Over-Yellow-Transparent-PNG.png" id="1_sqnp4"]
-[ext_resource type="Texture2D" uid="uid://ctvh1m8g0gqa5" path="res://sprites/Sprites Noite/10.png" id="2_dgyvc"]
+[ext_resource type="Texture2D" uid="uid://ctvh1m8g0gqa5" path="res://sprites/10.png" id="2_dgyvc"]
+[ext_resource type="FontFile" uid="uid://bre3w8o4mu3pl" path="res://fontes/m6x11.ttf" id="4_rkels"]
+[ext_resource type="Texture2D" uid="uid://bpll7lbl4g2ch" path="res://sprites/botaotryagain.png" id="5_bovwp"]
 
 [sub_resource type="Animation" id="Animation_tqy27"]
 length = 0.001
@@ -172,6 +174,78 @@ _data = {
 "reveal": SubResource("Animation_pef1b")
 }
 
+[sub_resource type="Animation" id="Animation_ntv3x"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wa3w6"]
+resource_name = "reveal"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.4, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0cbcl"]
+_data = {
+"RESET": SubResource("Animation_ntv3x"),
+"reveal": SubResource("Animation_wa3w6")
+}
+
+[sub_resource type="Animation" id="Animation_81v5o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_4xj60"]
+resource_name = "reveal2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b4qqf"]
+_data = {
+"RESET": SubResource("Animation_81v5o"),
+"reveal2": SubResource("Animation_4xj60")
+}
+
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_p3kr8")
 
@@ -194,6 +268,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 0.490196)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
@@ -221,6 +296,8 @@ offset_left = 136.0
 offset_top = 512.0
 offset_right = 320.0
 offset_bottom = 576.0
+theme_override_fonts/font = ExtResource("4_rkels")
+theme_override_font_sizes/font_size = 20
 text = "Créditos"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Button"]
@@ -229,4 +306,33 @@ libraries = {
 "": SubResource("AnimationLibrary_yma8m")
 }
 
+[node name="TextureButton" type="TextureButton" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 168.0
+offset_top = 384.0
+offset_right = 280.0
+offset_bottom = 480.0
+texture_normal = ExtResource("5_bovwp")
+stretch_mode = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureButton"]
+autoplay = "reveal"
+libraries = {
+"": SubResource("AnimationLibrary_0cbcl")
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_right = 440.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0.156863, 0.329412, 0.721569, 1)
+
+[node name="transition" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b4qqf")
+}
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="animation_finished" from="transition" to="." method="_on_transition_animation_finished"]
