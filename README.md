@@ -16,9 +16,7 @@
 
 <p align="center">
 <img src="https://github.com/2023-1-MCC1/Projeto5/blob/main/imagens/TelaDeJogo.png?raw=true" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
-</p>
-
+  
 
 Jogo feito para o projeto interdisciplinar do primeiro semestre do Curso de Ciência da Computação.
 <br><br>
