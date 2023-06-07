@@ -119,7 +119,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://2dpig.itch.io/pixel-office/download/eyJleHBpcmVzIjoxNjgyMzcxNTgxLCJpZCI6MTE0ODA5Nn0%3d.FCtaF79dJFnWExACu33LyKnOuzA%3d>
+1. <a href="https://2dpig.itch.io/pixel-office/download/eyJleHBpcmVzIjoxNjgyMzcxNTgxLCJpZCI6MTE0ODA5Nn0%3d.FCtaF79dJFnWExACu33LyKnOuzA%3d"> Pixel Office Asset Pack </a> 
 2. Músicas por: <a href="https://assetstore.unity.com/packages/audio/ambient/sci-fi/retro-synth-80-90-s-191422#content"> Checkpoint Charlie </a> 
 3. <https://creativecommons.org/share-your-work/>
 
