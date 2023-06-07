@@ -8,7 +8,7 @@
 
 ## Nome do Grupo: Jamal
 
-## Integrantes: <a href="https://www.linkedin.com/in/vitor-tokunaga-82b344278/">Vitor Hideki Tokunaga</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Vitor Leão Bonifácio</a>, <a href="https://www.linkedin.com/in/victorbarq/">Matheus Moura de Souza</a>, <a href="https://www.linkedin.com/in/victorbarq/">Jasmani Rudy</a>,
+## Integrantes: <a href="https://www.linkedin.com/in/vitor-tokunaga-82b344278/">Vitor Hideki Tokunaga</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Vitor Leão Bonifácio</a>, <a href="https://www.linkedin.com/in/matheus-moura-a6854925b/">Matheus Moura de Souza</a>, <a href="https://www.linkedin.com/in/victorbarq/">Jasmani Rudy</a>,
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href="https://www.linkedin.com/in/victorbarq/">Renata Muniz Do Nascimento</a>, <a href="https://www.linkedin.com/in/victorbarq/">Fabiano Alves Onça</a>, <a href="https://www.linkedin.com/in/victorbarq/">Eduardo Savino Gomes</a>, <a href="https://www.linkedin.com/in/victorbarq/">Jefferson de Oliveira Silva</a>
 

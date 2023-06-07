@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/gameover.cs" id="1_p3kr8"]
 [ext_resource type="Texture2D" uid="uid://qlkh84f4jtg1" path="res://sprites/Game-Over-Yellow-Transparent-PNG.png" id="1_sqnp4"]
-[ext_resource type="Texture2D" uid="uid://ctvh1m8g0gqa5" path="res://sprites/Sprites Noite/10.png" id="2_dgyvc"]
+[ext_resource type="Texture2D" uid="uid://ctvh1m8g0gqa5" path="res://sprites/10.png" id="2_dgyvc"]
 
 [sub_resource type="Animation" id="Animation_tqy27"]
 length = 0.001
