@@ -113,14 +113,13 @@ A cada atualização os detalhes devem ser lançados aqui.
     * Trabalho em andamento
 
 ## 📋 Licença/License
-<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
 
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
+1. <https://2dpig.itch.io/pixel-office/download/eyJleHBpcmVzIjoxNjgyMzcxNTgxLCJpZCI6MTE0ODA5Nn0%3d.FCtaF79dJFnWExACu33LyKnOuzA%3d>
+2. Músicas por: <a href="https://assetstore.unity.com/packages/audio/ambient/sci-fi/retro-synth-80-90-s-191422#content"> Checkpoint Charlie </a> 
 3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+
