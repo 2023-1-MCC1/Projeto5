@@ -10,7 +10,7 @@
 
 ## Integrantes: <a href="https://www.linkedin.com/in/vitor-tokunaga-82b344278/">Vitor Hideki Tokunaga</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Vitor Leão Bonifácio</a>, <a href="https://www.linkedin.com/in/matheus-moura-a6854925b/">Matheus Moura de Souza</a>, <a href="https://www.linkedin.com/in/victorbarq/">Jasmani Rudy</a>,
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a href="https://www.linkedin.com/in/victorbarq/">Renata Muniz Do Nascimento</a>, <a href="https://www.linkedin.com/in/victorbarq/">Fabiano Alves Onça</a>, <a href="https://www.linkedin.com/in/victorbarq/">Eduardo Savino Gomes</a>, <a href="https://www.linkedin.com/in/victorbarq/">Jefferson de Oliveira Silva</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <a>Renata Muniz Do Nascimento</a>, <a>Fabiano Alves Onça</a>, <a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">Eduardo Savino Gomes</a>, <a href="https://www.linkedin.com/in/jefferson-silva-2193b323/?originalSubdomain=br">Jefferson de Oliveira Silva</a>
 
 ## Descrição
 
